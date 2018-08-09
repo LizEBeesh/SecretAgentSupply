@@ -1,18 +1,100 @@
 
-/* Universal Stories*/
+/* Universal Rules*/
 
 html {
   font-size: 18px;
 }
 
 body {
-  width: 960px
+  width: 960px;
+  font-family: Helvetica;
+}
+
+h1, h4 {
+  font-family: Helvetica;
+  font-weight: bold;
 }
 .company {
+  display: flex;
+  height: 2rem;
+  background-color: black;
 
+}
 
+/* This is the area with the little logo and the name of the site*/
+
+.company {
+  background-color: black;
+  color: white;
 }
 
 .company .container {
-  
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
+}
+
+.company img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.container img {
+  height: 1.5rem;
+  max-width: 960px;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
+  padding: 0.66rem 0.66rem;
+}
+
+.container h1 {
+  color: white;
+  font-size: 1rem;
+  padding: 0.66rem 0.66rem;
+  justify-content: center;
+  background-color: black;
+}
+
+/*big container with photo background*/
+.bigcontainer {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  margin: 0 auto;
+  padding-top: 9rem;
+}
+
+/*Sport bikes and motorcycles black box Not sure why it's sticky on left*/
+
+.blackbox {
+  width: 20rem;
+  background-color: black;
+  color: white;
+  position: relative;
+  padding: 2rem 3rem;
+}
+
+.blackbox h4 {
+  font-size: 1rem;
+}
+
+.blackbox h1 {
+  font-size: 2rem;
+}
+
+/*Red nav bar*/
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  color: white;
 }
