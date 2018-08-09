@@ -21,6 +21,11 @@ h1, h4 {
 
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /* This is the area with the little logo and the name of the site*/
 
 .company {
@@ -84,7 +89,7 @@ h1, h4 {
   font-size: 2rem;
 }
 
-/*Red nav bar*/
+/*Red nav bar how do I get rid of the bullets?*/
 
 nav {
   background-color: firebrick;
@@ -95,6 +100,31 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0;
+  padding: 0.75rem;
   color: white;
 }
+
+
+/*Main Item Area*/
+
+ .products,
+ .location-hours {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 3rem;
+ }
+
+ .product {
+   max-width: 30%;
+ }
+ .product img {
+   height: 9rem;
+   padding: 2rem;
+ }
+
+ .description {
+   background-color: black;
+   color: white;
+   padding: 1rem 2rem;
+   text-align: center;
+ }
