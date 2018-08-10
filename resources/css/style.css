@@ -1,4 +1,6 @@
 
+
+
 /* Universal Rules*/
 
 html {
@@ -11,14 +13,7 @@ body {
 }
 
 h1, h4 {
-  font-family: Helvetica;
   font-weight: bold;
-}
-.company {
-  display: flex;
-  height: 2rem;
-  background-color: black;
-
 }
 
 .container {
@@ -31,6 +26,8 @@ h1, h4 {
 .company {
   background-color: black;
   color: white;
+  display: flex;
+  height: 2rem;
 }
 
 .company .container {
@@ -46,7 +43,7 @@ h1, h4 {
 
 .container img {
   height: 1.5rem;
-  max-width: 960px;
+
   padding-left: 0.5rem;
   padding-right: 1.5rem;
   padding: 0.66rem 0.66rem;
@@ -61,19 +58,19 @@ h1, h4 {
 }
 
 /*big container with photo background*/
-.bigcontainer {
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+.hero {
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 25rem;
-  margin: 0 auto;
   padding-top: 9rem;
 }
 
 /*Sport bikes and motorcycles black box Not sure why it's sticky on left*/
 
 .blackbox {
+  height: 9rem;
   width: 20rem;
   background-color: black;
   color: white;
@@ -86,10 +83,13 @@ h1, h4 {
 }
 
 .blackbox h1 {
+  margin: 0.25rem 0;
   font-size: 2rem;
+  line-height: 1.2;
+
 }
 
-/*Red nav bar how do I get rid of the bullets?*/
+/*Red nav bar*/
 
 nav {
   background-color: firebrick;
@@ -101,7 +101,11 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem;
-  color: white;
+}
+
+.mobile-nav {
+  display: none;
+  text-align: center;
 }
 
 
@@ -117,6 +121,7 @@ nav ul {
  .product {
    width: 30%;
  }
+
  .product-image img {
    max-width: 8rem;
  }
@@ -124,8 +129,8 @@ nav ul {
  .description {
    display: block;
    padding: 0.5rem;
-   background-color: black;
    text-align: center;
+   background-color: black;
    color: white;
  }
 
@@ -141,7 +146,13 @@ nav ul {
  .location-hours {
    width: 35%;
    padding: 2rem 1rem;
+ }
 
+ .info .description {
+   display: block;
+   padding: 1rem 2rem;
+   background-color: black;
+   color: white;
  }
 
 .footer {
@@ -150,5 +161,23 @@ nav ul {
   background-color: black;
   color: white;
   text-align: left;
+  padding: 2rem 2rem;
+
+}
+
+@@media only screen and (max-width: 1024) {
+
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
 
 }
