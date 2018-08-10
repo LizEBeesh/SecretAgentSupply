@@ -1,6 +1,5 @@
 
 
-
 /* Universal Rules*/
 
 html {
@@ -163,7 +162,7 @@ nav ul {
 
 }
 
-@@media only screen and (max-width: 1024) {
+@@media only screen and (max-width: 1024px) {
 
   .product {
     width: 47%;
@@ -178,4 +177,30 @@ nav ul {
     text-align: center;
   }
 
+}
+
+@media only screen and (max-width: 470px) {
+
+  .location-hours,
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .footer {
+
+  }
 }
